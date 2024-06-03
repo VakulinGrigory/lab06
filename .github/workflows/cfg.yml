@@ -84,7 +84,7 @@ jobs:
       - name: Make CPack artifacts
         run: |
           cd _build
-          cpack -G "DMG"
+          cpack -G "Bundle"
           cd ..
       - name: Artifacts
         uses: actions/upload-artifact@v4
