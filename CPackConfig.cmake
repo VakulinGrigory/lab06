@@ -21,5 +21,6 @@ set(CPACK_DEBIAN_PACKAGE_RELEASE 1)
 
 set(CPACK_BUNDLE_NAME "banking_app")
 set(CPACK_BUNDLE_PLIST "${CMAKE_SOURCE_DIR}/Info.plist")
+set(CPACK_BUNDLE_ICON "${CMAKE_SOURCE_DIR}/icon.icns")
 
 include(CPack)
