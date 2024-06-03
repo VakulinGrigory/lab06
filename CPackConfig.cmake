@@ -19,4 +19,8 @@ set(CPACK_DEBIAN_PACKAGE_NAME "libbanking-dev")
 set(CPACK_DEBIAN_PACKAGE_PREDEPENDS "cmake >= 3.0")
 set(CPACK_DEBIAN_PACKAGE_RELEASE 1)
 
+set(CPACK_GENERATOR "Bundle")
+set(CPACK_BUNDLE_NAME "banking")
+set(CPACK_BUNDLE_PLIST "${CMAKE_CURRENT_LIST_DIR}/Info.plist")  # Set path to your Info.plist file
+
 include(CPack)
