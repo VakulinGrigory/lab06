@@ -4,6 +4,11 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(banking_app)
+
+set(CPACK_GENERATOR "Bundle")
+set(CPACK_BUNDLE_NAME "banking_app") 
+include(CPack)
+
 set(BANKING_VERSION_MAJOR 0)
 set(BANKING_VERSION_MINOR 1)
 set(BANKING_VERSION_PATCH 0)
